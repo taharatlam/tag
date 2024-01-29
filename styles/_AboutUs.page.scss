@@ -1,0 +1,12 @@
+.about-us-bg {
+  background: url("/assets/about-us-bg.jpeg") no-repeat center fixed;
+  background-size: cover;
+}
+.about-us-paragraph {
+  line-height: 1.8em;
+  font-size: clamp(0.8em, 2vw, 1.2em);
+}
+// .about-vision-img {
+//   width: 500px;
+//   min-height: 800px !important;
+// }

@@ -1,0 +1,261 @@
+.hero-button-container {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 770px) {
+    gap: 2em;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    button {
+      width: 70% !important;
+      max-height: 30px;
+    }
+  }
+}
+.home-slider-heading {
+  font-size: clamp(2em, 5vw, 5em);
+}
+.home-slider-text {
+  font-size: clamp(1.2em, 3vw, 2em);
+  line-height: 1.7em;
+}
+
+.home-heading {
+  font-size: clamp(2em, 7vw, 3.5em);
+}
+.home-heading-2 {
+  font-size: clamp(1.8em, 6.5vw, 3em);
+}
+
+.home-form-wrapper {
+  background: url("/assets/homeImage2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home-form-wrapper2 {
+  background: url("/assets/contact-us-bg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home-contact-form {
+  max-width: 500px;
+  input {
+    padding: 10px 20px;
+    &::placeholder {
+      color: lightgrey;
+    }
+  }
+}
+.course-contact-form {
+  max-width: 600px;
+  input {
+    padding: 10px 20px;
+    &::placeholder {
+      color: lightgrey;
+    }
+  }
+}
+
+.courses-container {
+  @media (max-width: 500px) {
+    display: none !important;
+  }
+  overflow-x: scroll;
+}
+
+.gr-avatar {
+}
+
+.courses-container-mobile {
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+.courses-container-desktop {
+  display: flex;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.no-thumbs {
+  .thumbs-wrapper {
+    display: none !important;
+  }
+}
+
+.hero-bg {
+  height: 500px;
+  background-size: cover !important;
+  @media screen and (min-width: 768px) {
+    height: 600px;
+    background-size: 100% 100% !important ;
+  }
+  @media screen and (min-width: 1100px) {
+    height: clamp(550px, 85vh, 1000px);
+    background-size: cover !important ;
+  }
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 14px rgba(0, 0, 0, 1);
+}
+.text-shadow-white {
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+}
+.text-shadow-primary {
+  text-shadow: 3px 3px 14px $primaryColor;
+}
+.course-icon-mobile {
+  max-width: 50px !important;
+  max-height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+}
+.course-icon-nav {
+  max-width: 30px !important;
+  max-height: 30px !important;
+  min-width: 30px !important;
+  min-height: 30px !important;
+}
+.alumni-mobile-carousel {
+  @media screen and (min-width: 500px) {
+    display: none;
+  }
+  .carousel.carousel-slider .control-arrow {
+    top: 0 !important;
+  }
+}
+
+.fade-in-image {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.courses-mobile-item {
+  &:active,
+  &:focus {
+    background-color: rgba(255, 255, 255, 1);
+    .courses-mobile-arrow {
+      border: 1px solid black;
+      border-radius: 50%;
+      margin: 10px;
+      margin-right: 0;
+      height: 30px;
+      width: 30px;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+      transform: scale(1);
+      animation: pulse 2s infinite;
+    }
+  }
+}
+//.courses-mobile-arrow {
+//  border: 1px solid black;
+//  border-radius: 50%;
+//  margin: 10px;
+//  margin-right: 0;
+//  height: 26px;
+//  width: 26px;
+//  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+//  transform: scale(1);
+//  animation: pulse 2s infinite;
+//}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.post-container{
+  position: relative;
+  height: max-content;
+}
+
+.post-container:hover .container-button {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container-button {
+  z-index: 9999;
+  height: 100%;
+}
+
+.post-container:hover > .post {
+  filter: blur(5px);
+}
+
+.container-button{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}

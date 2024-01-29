@@ -1,0 +1,189 @@
+@import "Colors";
+.navbar-logo {
+  max-height: 90px !important;
+  max-width: 130px !important;
+  min-height: 12px !important ;
+  min-width: 100px !important;
+  image-rendering: pixelated;
+  @media (max-width: 780px) {
+    max-height: 50px !important;
+    max-width: 90px !important;
+    min-height: 50px !important ;
+    min-width: 90px !important;
+  }
+}
+.nav-container {
+  margin-right: auto;
+  margin-left: auto;
+  align-self: center;
+  max-width: 1320px;
+}
+.nav-menu-lg {
+  @media (max-width: 780px) {
+    display: none;
+  }
+}
+.nav-md-bg {
+  @media (max-width: 780px) {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+.nav-menu-icon {
+  @media (min-width: 780px) {
+    display: none;
+  }
+}
+.mobile-nav {
+  position: fixed !important;
+  padding-top: 32px;
+  background: rgba(0, 0, 0, 0.9);
+  @media (min-width: 780px) {
+    display: none;
+  }
+  z-index: 99;
+}
+
+.mobile-nav-logo {
+  max-width: 50%;
+}
+.mobile-nav-link {
+  font-size: 1.12em;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  &:hover {
+    color: $primaryColor !important ;
+  }
+  &:focus {
+    color: $primaryColor !important ;
+  }
+  &:active {
+    color: $primaryColor !important ;
+  }
+}
+
+.search-input-container {
+  background: transparent;
+  border: 1px solid white;
+  height: 50px;
+  width: 350px;
+  border-radius: 7px;
+
+  color: white;
+}
+
+.search-input {
+  background: transparent;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  padding: 20px;
+  color: white;
+  outline: none;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &::placeholder {
+    color: white;
+  }
+}
+
+.nav-search-items {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+.course-nav-title {
+  font-size: 20px;
+}
+.course-nav-subtitle {
+  font-size: 12px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: $primaryColor;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 10%;
+  background-color: $primaryColor;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.focus-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: $primaryColor;
+}
+.focus-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 10%;
+  background-color: $primaryColor;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.focus-underline-animation:focus:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.course-nav-item {
+  background: linear-gradient(to left, transparent 50%, $primaryColor 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    .blob {
+      border: 1px solid black;
+      border-radius: 50%;
+      margin: 10px;
+      margin-right: 0;
+      height: 26px;
+      width: 26px;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+      transform: scale(1);
+      animation: pulse 2s infinite;
+    }
+  }
+  &:active {
+    background-color: rgba(221, 10, 76, 0.5);
+    transition: transform 0.4s ease-out;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

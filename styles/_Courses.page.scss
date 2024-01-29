@@ -1,0 +1,71 @@
+.courses-bg-dse {
+  background: url("/assets/dse-banner.png") no-repeat center fixed;
+  background-size: cover;
+}
+.courses-bg-dmp {
+  background: url("/assets/dmp-banner.png") no-repeat center fixed;
+  background-size: cover;
+}
+.courses-bg-acmp {
+  background: url("/assets/acmp-banner.jpeg") no-repeat center fixed;
+  background-size: cover;
+}
+.courses-bg-acpp {
+  background: url("/assets/acpp-banner.png") no-repeat center fixed;
+  background-size: cover;
+}
+.courses-bg-2 {
+  background: url("/assets/courses-bg-2.jpg") no-repeat center;
+  background-size: cover;
+}
+.eligibility-selector {
+  margin: 20px;
+  select {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    margin-top: 10px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 250px;
+    padding: 0px 10px;
+    option {
+      color: black;
+    }
+  }
+}
+
+.eligibility-tick {
+  height: 150px;
+  width: 150px;
+  background-color: $primaryColor;
+  border-radius: 50%;
+}
+
+.course-bubble{
+  height: clamp(90px,10vw,200px);
+  width: clamp(90px,10vw,200px);
+  border-radius:50%;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  //background: linear-gradient(to right, #43cea2, #185a9d);
+  background: linear-gradient(to right, #000000, $primaryColor);
+  p{
+    text-align: center;
+    font-size:clamp(10px,1.2vw, 1em);
+    color:white;
+    font-weight:500;
+    margin:0;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.52);
+  }
+}
+
+.course-bubble-container {
+  height: clamp(130px,14vw,300px);
+  width: clamp(130px,14vw,300px);
+}

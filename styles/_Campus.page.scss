@@ -1,0 +1,63 @@
+.campus-section-1 {
+  background: url("/assets/campusBg1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.studio-card-container {
+  width: 350px;
+  height: 200px;
+  .carousel.carousel-slider .control-arrow {
+    top: 0 !important;
+  }
+}
+.campus-studios-heading {
+  letter-spacing: 0.3em;
+  font-size: clamp(2em, 5vw, 3.5em);
+}
+.campus-studios-section {
+  background: #000;
+}
+.campus-intro-para {
+  @media (min-width: 600px) {
+    line-height: 2em;
+  }
+}
+.campus-para-width {
+  max-width: 900px;
+}
+
+.studio-card-btn {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  width: 100%;
+}
+.studio-card-overlay {
+  width: 350px;
+  height: 201px;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.6);
+}
+.campus-para-line-height {
+  line-height: 2.2em;
+}
+.studio-overlay-carousel {
+  margin: 0;
+  padding: 0;
+  .carousel.carousel-slider .control-arrow {
+    top: 0 !important;
+  }
+}
+
+.image-container {
+  width: 100%;
+  > div {
+    position: unset !important;
+  }
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}

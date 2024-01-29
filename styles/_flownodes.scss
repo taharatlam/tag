@@ -1,0 +1,13 @@
+.flow-center-node {
+  border : 2px solid $primaryColor;
+  background: black;
+  border-radius:5px;
+}
+.flow-side-node{
+  background: $primaryColor;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  max-width:100px;
+  max-height:100px;
+}

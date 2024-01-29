@@ -1,0 +1,16 @@
+.ac-focus-element {
+}
+.ac-arrow {
+  font-size: clamp(20px, 5vw, 3.2em);
+  border: none;
+  background: transparent;
+}
+.alumni-carousel-container {
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+// .alumni-mobile-carousel .carousel .control-dots {
+//   bottom: -15px;
+// }

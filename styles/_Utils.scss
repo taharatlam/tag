@@ -1,0 +1,76 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.accordion-container {
+  transition: 0.5s ease-out;
+}
+
+.underline-animation {
+  position: relative;
+  color: $primaryColor;
+}
+
+.underline-animation:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline-animation--after {
+  width: 350px;
+}
+
+
+.alice-carousel__prev-btn{
+  position:absolute;
+  left: 0;
+  top: calc(50% - 20px);
+  width: 50px !important;
+  height: 50px !important;
+  padding: 0 !important;
+}
+.alice-carousel__prev-btn-item{
+  padding:0px 20px !important;
+  padding-bottom:6px !important;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.7);
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.alice-carousel__next-btn{
+  position:absolute;
+  right: 0;
+  top: calc(50% - 20px);
+  width: 50px !important;
+  height: 50px !important;
+  padding: 0 !important;
+}
+.alice-carousel__next-btn-item{
+  padding:0px 20px !important;
+  padding-bottom:6px !important;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.7);
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}

@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "Colors";
+@import "Utils";
+@import "Home.page";
+@import "AboutUs.page";
+@import "Campus.page";
+@import "News-events.page";
+@import "Faculty.page";
+@import "Footer";
+@import "Navbar";
+@import "Courses.page";
+@import "Contact.page";
+@import "./components/FlipCards";
+@import "./components/FillUpButton";
+@import "./components/GoogleReview";
+@import "./components/AlumniCarousel";
+@import "./components/BlogThumb";
+@import "flownodes";
+
+body,
+html,
+.no-scrollbar {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-ptr {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.text-theme {
+  color: $primaryColor !important;
+}
+.wrapper {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+// home carousel override
+
+.carousel.carousel-slider .control-arrow {
+  top: 50px !important;
+}
+.stars {
+  margin-top: -8px;
+}
+
+.para-text {
+  font-size: clamp(0.9em, 2vw, 1em);
+}
+.theme-icon-btn {
+  background-color: $primaryColor;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 25px;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.theme-icon-btn-outline {
+  background-color: white;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+  font-weight: 600;
+  padding: 8px 25px;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+  overflow: scroll !important;
+}
+[aria-hidden="true"] {
+  display: none;
+}
+[aria-hidden="false"] {
+  display: block;
+}
+.btn-transparent {
+  background: transparent;
+  border: none;
+}
+.bg-tint-30 {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+.bg-tint-50 {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.bg-tint-60 {
+  background: rgba(0, 0, 0, 0.6);
+}
+.bg-tint-90 {
+  background: rgba(0, 0, 0, 0.9);
+}
+.fw-semiBold {
+  font-weight: 600 !important;
+}
+.theme-bullets {
+  list-style: none; /* Remove default bullets */
+  li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $primaryColor; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+}
+.theme-button {
+  background-color: $primaryColor !important;
+  border: none;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 7px;
+}
+.contact-faq {
+  background: url("/assets/homeImage2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.scroll-container {
+  height: 300px;
+  width: 100vw;
+}
+
+.blur-5 {
+  backdrop-filter: blur(5px);
+}
+.link-button {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.image-tinker {
+  height: 500px !important ;
+  min-height: 500px !important ;
+  min-width: 700px !important;
+  border-radius: 50px !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: $primaryColor !important;
+}
+
+.react-flow__attribution {
+  display: none !important;
+}
+
+.react-flow {
+  height: 600px !important;
+}
+.react-responsive-modal-modal {
+  padding: 5px !important ;
+  margin: 0 !important;
+  background-color: transparent !important;
+  overflow: hidden !important;
+}
+
+.yt-player-mobile-container {
+  width: 90vw;
+  height: calc(100vw * 9 / 16);
+}
+
+.yt-player-desktop-container {
+  width: clamp(500px, 50vw, 700px);
+  height: clamp(
+    calc(500px * 9 / 16),
+    calc(50vw * 9 / 16),
+    calc(700px * 9 / 16)
+  );
+}
+.blog-main-container {
+  img {
+    max-width: 100%;
+  }
+
+  p img {
+    max-width: 100%;
+  }
+
+  img,
+  svg {
+    max-width: 100% !important;
+    vertical-align: middle;
+  }
+}
+.bg-theme {
+  background-color: $primaryColor !important;
+}
+.promo-banner-text {
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+
+// .select__control, .react-select-container {
+//   background: none !important;
+//   color: white !important;
+// }
+
+.placement-img {
+  //   // width: 200px !important;
+  //   // height: 200px !important;
+  //   border: 5px solid red !important;
+  //   flex-basis: 33%;
+  object-fit: cover;
+}
+
+// @media only screen and (max-width: 600px) {
+//   .placement-img {
+//     width: 100px;
+//     height: 100px;
+//   }
+// }
+.yt-thumbnail {
+  object-fit: cover;
+}
+
+/* CSS */
+a.follow_btn{
+  background-color: #0095f6;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  padding: 10px 25px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+ }
+ a.follow_btn:hover{
+  background-color: #008de9;
+ }
+ 
+ a.message_btn{
+  background-color: #efefef;
+  color: #000000;
+  font-size: 19px;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+ }
+ a.message_btn:hover{
+  background-color: #e3e3e3;
+ }
+
+ a.subscribe_btn{
+  background-color: #000;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+ }
+ a.subscribe_btn:hover{
+  background-color: #515151;
+ }
+
+@media (max-width: 767px) {
+  a.message_btn {
+    margin-top: 10px;
+    padding: 7px 10px;
+  }
+}
+@media (max-width: 767px) {
+  a.follow_btn {
+    margin-top: 10px;
+    padding: 7px 20px;
+  }
+}
+@media (max-width: 767px) {
+  a.subscribe_btn {
+    margin-top: 10px;
+    padding: 7px 20px;
+  }
+} 
+.yt-heading {
+  font-family: "Roboto","Arial",sans-serif;
+}

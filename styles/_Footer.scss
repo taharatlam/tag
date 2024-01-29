@@ -1,0 +1,12 @@
+.footer-container {
+  background-color: $darkGray;
+}
+.footer-logo {
+  height: 90px;
+  width: 200px;
+  @extend .c-ptr
+}
+
+.footer-address {
+  max-width: 350px;
+}

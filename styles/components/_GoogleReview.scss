@@ -1,0 +1,23 @@
+.google-review-container {
+  min-width: 300px;
+  width: 300px;
+  height: 400px;
+}
+
+.alice-carousel__prev-btn {
+  left: -60px;
+}
+
+.alice-carousel__next-btn {
+  right: -68px;
+}
+
+@media only screen and (max-width: 768px) {
+  .alice-carousel__prev-btn {
+    left: -20px;
+  }
+
+  .alice-carousel__next-btn {
+    right: -30px;
+  }
+}

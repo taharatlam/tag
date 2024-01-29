@@ -1,0 +1,32 @@
+.contact-image-2 {
+  background: url("/assets/contact-us-bg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact-map-container {
+  min-width: 200px;
+  min-height: 300px;
+  max-height: 300px;
+  max-width: clamp(100px, 80vw, 500px);
+  @media only screen and (max-width:1100px){
+    min-width: 200px;
+    max-width: 40%;
+    min-height: 250px;
+    max-height: 200px;
+  }
+  @media only screen and (max-width:768px){
+    min-width: 200px;
+    max-width: 80%;
+    min-height: 250px;
+    max-height: 200px;
+  }
+  @media only screen and (max-width: 450px) {
+    min-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    max-width: 80%;
+  }
+}
