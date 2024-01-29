@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import FillUpButton from "../FillUpButton";
+import Image from "next/image";
 
 const FacultyImage = ({
   onClose,
@@ -21,13 +22,14 @@ const FacultyImage = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img
+      <Image
         src={data?.photo}
         className="c-ptr "
         style={{ objectFit: "cover" }}
         onClick={onClick}
         height={`${tablet ? "200px" : mobile ? "150px" : "270px"}`}
         width={`${tablet ? "200px" : "270px"}`}
+        alt=""
       />
 
       <div

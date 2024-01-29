@@ -17,7 +17,7 @@ const FlipCards = ({ className, title, subtitle, data, bgImage, link, learnmore 
       //   backgroundSize: "100%",
       // }}
     >
-      <Image src={bgImage} className="" />
+      <Image src={bgImage} className="" alt="" />
 
       {showBack ? (
         <motion.div

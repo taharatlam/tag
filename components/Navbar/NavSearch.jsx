@@ -21,7 +21,7 @@ export default function NavSearch({ searchOpen, setSearchOpen }) {
         )
       );
     }
-  }, [searchText]);
+  }, [searchText,allSearchResults]);
 
   return (
     <motion.div

@@ -372,7 +372,7 @@ const CampusPage = () => {
             <div className="row">
               <div className="col-md-5 order-2  order-last order-lg-first ">
                 <div className="" style={{ height: 500 }}>
-                  <Image src={DigitalClassroom} height="500px" width="500px" />
+                  <Image src={DigitalClassroom} height="500px" width="500px" alt="" />
                 </div>
               </div>
               <div className="col-md-7 d-flex flex-column align-items-center justify-content-center text-center text-md-start ">
@@ -415,7 +415,7 @@ const CampusPage = () => {
               </div>
               <div className="col-md-5 d-flex justify-content-end">
                 <div className=" rounded">
-                  <Image src={Elearning} height="500px" width="600px" />
+                  <Image src={Elearning} height="500px" width="600px" alt="" />
                 </div>
               </div>
             </div>

@@ -117,7 +117,7 @@ export default function Home() {
     animation.start({
       y: 100,
     });
-  }, []);
+  }, [animation]);
 
   useEffect(() => {
     if (inView === true) {
@@ -136,7 +136,7 @@ export default function Home() {
         },
       });
     }
-  }, [inView]);
+  }, [inView,animation]);
 
   const handleQuerySubmit = async (e) => {
     e.preventDefault();
@@ -257,6 +257,7 @@ export default function Home() {
                   priority={true}
                   src={size.width < 900 ? item.mobileImage : item.desktopImage}
                   layout="responsive"
+                  alt=""
                 />
                 <div
                   className="position-absolute w-100 h-100 bg-blur"

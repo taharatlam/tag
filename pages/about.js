@@ -88,6 +88,7 @@ const AboutPage = () => {
                     src={AboutImage1}
                     height="250px"
                     width="400px"
+                    alt=""
                   />
                 </div>
               </div>
@@ -102,6 +103,7 @@ const AboutPage = () => {
                     src={AboutImage2}
                     height="500px"
                     width="500px"
+                    alt=""
                   />
                 </div>
                 <div className="col-md-6 text-end text-white d-flex text-center text-md-start flex-column justify-content-center ">

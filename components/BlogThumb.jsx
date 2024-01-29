@@ -7,7 +7,7 @@ const BlogThumb = ({data, type}) => {
   return (
     <div onClick={() => router.push(`/${type}/${data._id}`)}  className="px-4 blog-thumb ">
       <div>
-        <Image src={data?.thumbnail} height="170px" width="300px" layout={'responsive'} />
+        <Image src={data?.thumbnail} height="170px" width="300px" layout={'responsive'} alt="" />
       </div>
       <p className="blog-thumb-date mb-2">{dayjs(data?.created_at).format('MMMM D, YYYY')}</p>
       <div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FiX } from "react-icons/fi";
 import { Carousel } from "react-responsive-carousel";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 const Overlay = ({
   onClose,
   images,
@@ -41,7 +42,7 @@ const Overlay = ({
             >
               {images.map((image, idx) => (
                 <div key={idx}>
-                  <img alt={""} src={image.src} className="img-fluid" />
+                  <Image alt={""} src={image.src} className="img-fluid" />
                 </div>
               ))}
             </Carousel>

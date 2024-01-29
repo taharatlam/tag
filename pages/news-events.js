@@ -20,7 +20,9 @@ const NewsEvents = () => {
       try {
         const res = await getAllEvents(page, count);
         setData([...data, ...res.data.data]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         setTotalPages(res.data?.meta?.pagesCount);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
       } catch (e) {
         console.log(e);
         alert("error occured");

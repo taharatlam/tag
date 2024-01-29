@@ -40,7 +40,7 @@ const BlogPage = () => {
       }
     })();
     setLoading(false);
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     setLoading(true);
@@ -54,7 +54,7 @@ const BlogPage = () => {
       }
     })();
     setLoading(false);
-  }, [page, count, update]);
+  }, [page, count, update,id]);
 
   const handleCommentPost = async (e) => {
     e.preventDefault();

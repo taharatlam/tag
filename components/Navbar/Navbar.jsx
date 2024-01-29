@@ -100,7 +100,7 @@ const Navbar = ({ className, learnmore }) => {
             </div>
             <Link href="/">
               <a className=" d-flex align-items-center mobile-nav-logo  ">
-                <Image src={logo} alt="nav_logo" />
+                <Image src={logo} alt="nav_logo"  />
               </a>
             </Link>
             <div>
@@ -223,7 +223,7 @@ const Navbar = ({ className, learnmore }) => {
         )}
         <Link href="/">
           <a className="navbar-logo d-flex align-items-center ">
-            <Image src={logo} />
+            <Image src={logo} alt="" />
           </a>
         </Link>
         <div className="nav-menu-lg">
